@@ -1,0 +1,54 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page24377407.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^ru$ page22076662.html [NC]
+RewriteRule ^ru/$ page22076662.html [NC]
+
+RewriteRule ^ktp-ru$ page23078570.html [NC]
+RewriteRule ^ktp-ru/$ page23078570.html [NC]
+
+RewriteRule ^trans-ru$ page22593894.html [NC]
+RewriteRule ^trans-ru/$ page22593894.html [NC]
+
+RewriteRule ^disconnectors-ru$ page23078839.html [NC]
+RewriteRule ^disconnectors-ru/$ page23078839.html [NC]
+
+RewriteRule ^trans-voltage-ru$ page22595163.html [NC]
+RewriteRule ^trans-voltage-ru/$ page22595163.html [NC]
+
+RewriteRule ^arresters-ru$ page23079293.html [NC]
+RewriteRule ^arresters-ru/$ page23079293.html [NC]
+
+RewriteRule ^busbars-ru$ page23079399.html [NC]
+RewriteRule ^busbars-ru/$ page23079399.html [NC]
+
+RewriteRule ^ktp$ page24377893.html [NC]
+RewriteRule ^ktp/$ page24377893.html [NC]
+
+RewriteRule ^trans$ page24377901.html [NC]
+RewriteRule ^trans/$ page24377901.html [NC]
+
+RewriteRule ^disconnectors$ page24377906.html [NC]
+RewriteRule ^disconnectors/$ page24377906.html [NC]
+
+RewriteRule ^trans-voltage$ page24377911.html [NC]
+RewriteRule ^trans-voltage/$ page24377911.html [NC]
+
+RewriteRule ^arresters$ page24377917.html [NC]
+RewriteRule ^arresters/$ page24377917.html [NC]
+
+RewriteRule ^busbars$ page24377919.html [NC]
+RewriteRule ^busbars/$ page24377919.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild3462-3737-4137-b332-656238313237/favicon_64x64.ico [R=302,L]
+
